@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of an IUT Computer Science student.">
+  <title>Alimova Sabina — Anime Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="intro" id="intro" aria-label="Welcome screen">
+    <div class="intro-rays"></div>
+    <div class="sakura-branches" aria-hidden="true">
+      <img class="sakura-photo sakura-photo-left" src="https://images.unsplash.com/photo-1584441929630-dfc7a2b763af?auto=format&amp;fit=crop&amp;w=1400&amp;q=88" alt="">
+      <img class="sakura-photo sakura-photo-right" src="https://images.unsplash.com/photo-1584441929630-dfc7a2b763af?auto=format&amp;fit=crop&amp;w=1400&amp;q=88" alt="">
+    </div>
+    <p class="intro-kicker">A NEW STORY BEGINS</p>
+    <h1>WELCOME TO<br><span>MY PAGE!</span></h1>
+    <button class="enter-button" id="enterButton" type="button">ENTER THE STORY <span>→</span></button>
+    <p class="intro-hint">Click to continue</p>
+  </div>
+
+  <div class="sakura-layer" id="sakuraLayer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Go to home"><span>SABINA</span> ALIMOVA</a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#lab">Network Lab</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch theme">
+        <span class="sun">☀</span><span class="moon">☾</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="speed-lines"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span>01</span> CHARACTER INTRODUCTION</p>
+        <div class="speech-bubble">HELLO, WORLD!</div>
+        <h1>BUILDING MY<br><em>DIGITAL STORY.</em></h1>
+        <p class="hero-copy">Computer Science student at Inha University in Tashkent, exploring how code, networks and intelligent tools shape the modern world.</p>
+        <a class="comic-button" href="#about">DISCOVER MY STORY <span>↘</span></a>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="sun-disc"></div>
+        <div class="panel-card">
+          <div class="panel-no">CHAPTER 01</div>
+          <div class="code-face">&lt;/&gt;</div>
+          <p>FUTURE<br>DEVELOPER</p>
+        </div>
+        <span class="sound-effect">WHOOSH!</span>
+      </div>
+      <a class="scroll-cue" href="#about">SCROLL <span>↓</span></a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="chapter">CHAPTER 02</p>
+        <h2>ABOUT <span>ME</span></h2>
+      </div>
+      <div class="comic-grid">
+        <article class="manga-panel bio-panel reveal">
+          <span class="panel-tag">BIO</span>
+          <p class="lead">Hi! I am Alimova Sabina, a student at Inha University in Tashkent (IUT).</p>
+          <p>I am learning modern web development, artificial intelligence tools, and the principles behind computer networks. Every new project is another chapter in my journey through technology.</p>
+          <div class="ink-note">STUDENT MODE: ON!</div>
+        </article>
+        <article class="manga-panel status-panel reveal">
+          <span class="panel-tag">PROFILE</span>
+          <div class="stat"><span>University</span><strong>IUT</strong></div>
+          <div class="stat"><span>Major</span><strong>Computer Science</strong></div>
+          <div class="stat"><span>Location</span><strong>Tashkent, Uzbekistan</strong></div>
+          <div class="stat"><span>Current arc</span><strong>Learning & Building</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section courses" id="courses">
+      <div class="section-heading light reveal">
+        <p class="chapter">CHAPTER 03</p>
+        <h2>MY <span>COURSES</span></h2>
+      </div>
+      <div class="course-list">
+        <article class="course-card reveal"><span>01</span><h3>Computer<br>Networks</h3><p>Packets, protocols and connected systems.</p></article>
+        <article class="course-card reveal"><span>02</span><h3>Web<br>Programming</h3><p>Interactive experiences for the web.</p></article>
+        <article class="course-card reveal"><span>03</span><h3>Operating<br>Systems</h3><p>Processes, memory and system resources.</p></article>
+        <article class="course-card reveal"><span>04</span><h3>Data<br>Structures</h3><p>Efficient ways to organize information.</p></article>
+        <article class="course-card reveal"><span>05</span><h3>Introduction<br>to IT</h3><p>Core ideas behind modern technology.</p></article>
+      </div>
+    </section>
+
+    <section class="section lab" id="lab">
+      <div class="section-heading reveal">
+        <p class="chapter">CHAPTER 04</p>
+        <h2>NETWORK <span>FINDINGS</span></h2>
+      </div>
+      <div class="lab-layout">
+        <div class="terminal reveal">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>network_report.txt</span></div>
+          <div class="terminal-body">
+            <p><b>$</b> traceroute inha.uz</p>
+            <p class="output">Local response ........ ~15 ms</p>
+            <p><b>$</b> traceroute mit.edu</p>
+            <p class="output">International response . ~110 ms</p>
+            <p><b>$</b> whois provider</p>
+            <p class="output">AS43060 — IPLUS LLC<br>Tashkent, Uzbekistan</p>
+            <p class="cursor"><b>$</b> <span></span></p>
+          </div>
+        </div>
+        <article class="lab-note reveal">
+          <span class="burst">LAB!</span>
+          <h3>TRAFFIC & SECURITY</h3>
+          <p>Using Wireshark, I examined HTTP POST requests and analyzed TLS 1.3 traffic protected by a Sectigo certificate.</p>
+          <div class="protocols"><span>HTTP</span><span>TLS 1.3</span><span>WIRESHARK</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading light reveal">
+        <p class="chapter">CHAPTER 05</p>
+        <h2>MY <span>PROJECTS</span></h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <div class="project-visual web"><span>&lt;HTML&gt;</span><span>{ CSS }</span><span>JS();</span></div>
+          <div class="project-info"><p>WEB DEVELOPMENT</p><h3>Personal Portfolio Website</h3><p>A responsive page built with HTML, CSS and JavaScript, then published online through GitHub Pages.</p></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <div class="project-visual packet"><span>HTTP</span><i>→</i><span class="locked">HTTPS 🔒</span></div>
+          <div class="project-info"><p>NETWORK ANALYSIS</p><h3>HTTP & HTTPS Packet Analysis</h3><p>A Wireshark study comparing unencrypted connections with traffic secured by TLS.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-burst" aria-hidden="true"></div>
+      <div class="contact-content reveal">
+        <p>FINAL CHAPTER</p>
+        <h2>LET'S<br><span>CONNECT!</span></h2>
+        <div class="contact-links">
+          <a href="mailto:student@inha.uz"><small>EMAIL</small>student@inha.uz <b>↗</b></a>
+          <a href="https://github.com/" target="_blank" rel="noopener"><small>GITHUB</small>github.com <b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Alimova Sabina</p><p>MADE WITH HTML • CSS • JAVASCRIPT</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
